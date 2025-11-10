@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    # ---- Database Connection ----
+    url: jdbc:postgresql://localhost:5432/fitbuddy_db
+    username: fituser
+    password: fitpassword
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    # ---- Hibernate / JPA Settings ----
+    hibernate:
+      ddl-auto: update     # creates or updates tables automatically based on @Entity classes
+    show-sql: true          # prints SQL in console
+    properties:
+      hibernate:
+        format_sql: true    # formats SQL nicely
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  # Optional: you can define a custom schema if needed later
+  # sql:
+  #   init:
+  #     platform: postgres
+  #     mode: always
+
+server:
+  port: 8080   # where your backend will run
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
