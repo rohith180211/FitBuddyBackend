@@ -8,6 +8,6 @@ public class FitBuddyBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FitBuddyBackendApplication.class, args);
-	}
 
+	}
 }

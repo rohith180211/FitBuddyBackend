@@ -1,4 +1,4 @@
-package com.example.demo.Repository;
+package com.example.demo.RepositoryImpl;
 
 import com.example.demo.Entity.Match;
 import com.example.demo.Entity.User;

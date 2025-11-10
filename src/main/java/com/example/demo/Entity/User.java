@@ -1,11 +1,7 @@
 package com.example.demo.Entity;
 
-
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
@@ -21,6 +17,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String name;
 
     @Column(unique = true, nullable = false)
@@ -30,9 +27,9 @@ public class User {
     private String gender;
     private Integer age;
 
-    private String fitnessGoal;         // e.g. "Build Muscle"
-    private String workoutTypes;        // e.g. "Gym, Running"
-    private String availability;        // e.g. "Weekdays 7am-9am"
+    private String fitnessGoal;
+    private String workoutTypes;
+    private String availability;
 
     private Double latitude;
     private Double longitude;
@@ -41,7 +38,6 @@ public class User {
     private String bio;
 
     private String profilePictureUrl;
-
     private Integer xpPoints = 0;
     private Integer streakDays = 0;
 
