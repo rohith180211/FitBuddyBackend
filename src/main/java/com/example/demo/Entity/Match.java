@@ -35,11 +35,7 @@ public class Match {
     private LocalDateTime createdAt = LocalDateTime.now();
     private LocalDateTime updatedAt = LocalDateTime.now();
 
-    public enum MatchStatus {
-        PENDING,
-        MATCHED,
-        REJECTED
-    }
+
 
 
 
