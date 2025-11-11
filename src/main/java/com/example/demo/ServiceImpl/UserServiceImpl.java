@@ -1,10 +1,10 @@
 package com.example.demo.ServiceImpl;
 
+import com.example.demo.DTO.User.UserRequestDTO;
+import com.example.demo.DTO.User.UserResponseDTO;
 import com.example.demo.Entity.User;
 import com.example.demo.Repository.UserRepository;
 import com.example.demo.Service.UserService;
-import com.example.demo.dto.UserRequestDTO;
-import com.example.demo.dto.UserResponseDTO;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

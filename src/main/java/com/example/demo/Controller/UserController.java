@@ -1,8 +1,8 @@
 package com.example.demo.Controller;
 
+import com.example.demo.DTO.User.UserRequestDTO;
+import com.example.demo.DTO.User.UserResponseDTO;
 import com.example.demo.Service.UserService;
-import com.example.demo.dto.UserRequestDTO;
-import com.example.demo.dto.UserResponseDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
