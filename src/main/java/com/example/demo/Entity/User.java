@@ -1,6 +1,8 @@
 package com.example.demo.Entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -20,10 +22,16 @@ public class User {
     @Column(nullable = false)
     private String name;
 
+
+    @NotBlank
+    @Email
     @Column(unique = true, nullable = false)
     private String email;
 
+
+    @NotBlank
     private String password;
+
     private String gender;
     private Integer age;
 
